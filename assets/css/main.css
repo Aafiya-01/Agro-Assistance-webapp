@@ -1334,3 +1334,33 @@ body {
       font-size: 14px;
   }
 }
+
+@media (max-width: 768px) {
+  .how-it-works {
+      padding: 20px;
+      text-align: center;
+  }
+  
+  .how-it-works h2 {
+      font-size: 1.5rem;
+      line-height: 1.2;
+  }
+  
+  .use-now-button {
+      display: block;
+      width: 80%;
+      margin: 10px auto;
+      padding: 10px;
+      font-size: 1rem;
+      background-color: #fff;
+      color: #000;
+      border-radius: 5px;
+      text-align: center;
+      font-weight: bold;
+  }
+  
+  .how-it-works p {
+      font-size: 0.9rem;
+      line-height: 1.4;
+  }
+}
