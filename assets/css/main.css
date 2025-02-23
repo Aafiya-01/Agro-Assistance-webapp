@@ -238,7 +238,7 @@ header {
   .hero {
       margin: auto;
       height: 50vh; 
-      margin-bottom: 32rem;
+      margin-bottom: 28rem;
   }
 }
 
@@ -698,12 +698,12 @@ header {
   font-weight: 400;
   list-style-type:disc;
 }
-.works__step_description p {
+/* .works__step_description p {
   padding-bottom: 25px;
 }
 .works__step_description li {
   padding-bottom: 10px;
-}
+} */
 
 /*End How Is Works*/
 /*Testimonials*/
