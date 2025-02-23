@@ -698,12 +698,12 @@ header {
   font-weight: 400;
   list-style-type:disc;
 }
-/* .works__step_description p {
-  padding-bottom: 25px;
+.works__step_description p {
+  padding-bottom: 2rem;
 }
 .works__step_description li {
-  padding-bottom: 10px;
-} */
+  padding-bottom: 1rem;
+} 
 
 /*End How Is Works*/
 /*Testimonials*/
@@ -1096,7 +1096,7 @@ header {
 @media screen and (max-width: 768px) {
   /* Opportunities*/
   .opportunity {
-    width: 100%;
+    width: 50%;
   }
   /*End Opportunities*/
   /*How Is Works*/
@@ -1326,7 +1326,7 @@ body {
 .footer {
   text-align: center;
   padding: 1rem;
-  background: #222;
+  /* background: #222; */
   color: white;
 }
 
