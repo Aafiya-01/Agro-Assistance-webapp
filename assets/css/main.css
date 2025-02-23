@@ -689,7 +689,7 @@ header {
 
 .works__step_title {
   font-size: 2.4rem;
-  flex: 5;
+  flex: 2; /* added this later */
 }
 
 .works__step_description {
@@ -1119,7 +1119,7 @@ header {
   }
   .works__step__content {
     flex-direction: column;
-    margin-bottom: 20rem;
+    margin-bottom: 10rem;
   }
   .works__step_title {
     font-size: 2rem;
