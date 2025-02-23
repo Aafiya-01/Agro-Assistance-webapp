@@ -1119,6 +1119,7 @@ header {
   }
   .works__step__content {
     flex-direction: column;
+    margin-bottom: 20rem;
   }
   .works__step_title {
     font-size: 2rem;
