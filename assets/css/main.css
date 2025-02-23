@@ -132,9 +132,9 @@ header {
 }
 
 .btn__signup {
-  border: 1px solid #000000;
+  border: 1px solid #ffffff;
   font-size: 1.6rem;
-  color: #000000;
+  color: #ffffff;
   /*
     Button hover effect resource
     https://codepen.io/alticreation/pen/zBZwOP
@@ -461,6 +461,10 @@ header {
 
 /*End Opportunities*/
 /* Invest*/
+.invest__item__footer {
+  margin-top: auto; 
+}
+
 .invest {
   margin: auto;
 }
@@ -488,6 +492,11 @@ header {
 
 .invest__item {
   padding: 2.5rem;
+  /* ADDED THIS LATER */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  min-height: 100%;
 }
 
 .invest__item:nth-child(1) {
@@ -517,6 +526,8 @@ header {
 
 .invest__item__body {
   margin: 5rem 0 2.5rem;
+  /* ADDED THIS LATER */
+  flex-grow: 1;
 }
 
 .invest__item__title {
