@@ -1096,6 +1096,10 @@ header {
 @media screen and (max-width: 768px) {
   /* Opportunities*/
   .opportunity {
+    width: 100%;
+  }
+
+  .img_500 {
     width: 50%;
   }
   /*End Opportunities*/
