@@ -372,8 +372,8 @@ header {
 
 .opportunities__img {
   position: absolute;
-  left: -1.5rem;
-  top: -16rem;
+  left: -6.5rem;
+  top: -13rem;
   z-index: -1;
 }
 
@@ -1034,8 +1034,8 @@ header {
 .footer_img {
   position: absolute;
   bottom: 0;
-  right: -1.5rem;
   max-width: 50rem;
+  right: -6.5rem;
 }
 
 /*End Footer*/
