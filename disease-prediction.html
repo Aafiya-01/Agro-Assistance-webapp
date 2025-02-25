@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Prediction</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #eaf4d3;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        /* Animated Background */
+        .animated-bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -2;
+            background: linear-gradient(to bottom, #d4edb3, #eaf4d3, #ffffff);
+        }
+
+        /* Floating Leaves Animation */
+        .leaf {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-image: url('assets/img/leaf.png');
+            background-size: cover;
+            opacity: 0.7;
+        }
+
+        /* Growing Plant */
+        .plant {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 150px;
+            background-image: url('assets/img/plant.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 400px;
+            position: relative;
+            z-index: 1;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        #prediction-result {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+    
+    <!-- Floating Leaves -->
+    <div class="leaf" style="top: 10%; left: 20%;"></div>
+    <div class="leaf" style="top: 30%; left: 60%;"></div>
+    <div class="leaf" style="top: 50%; left: 40%;"></div>
+    
+    <!-- Growing Plant -->
+    <div class="plant"></div>
+
+    <div class="container">
+        <h2>Disease Prediction</h2>
+        <input type="file" id="file-upload" accept="image/*">
+        <button id="predict-btn">Predict Disease</button>
+        <div id="prediction-result"></div>
+    </div>
+    
+    <script>
+        // Floating Leaves Animation
+        document.querySelectorAll('.leaf').forEach(leaf => {
+            anime({
+                targets: leaf,
+                translateY: [0, 50],
+                translateX: [0, 20],
+                opacity: [0.7, 1],
+                easing: 'easeInOutQuad',
+                duration: 3000,
+                loop: true,
+                direction: 'alternate'
+            });
+        });
+
+        // Growing Plant Animation
+        anime({
+            targets: '.plant',
+            opacity: [0, 1],
+            translateY: [50, 0],
+            duration: 3000,
+            easing: 'easeInOutSine'
+        });
+    </script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

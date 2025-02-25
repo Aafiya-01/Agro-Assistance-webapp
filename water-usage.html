@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Usage Prediction</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, #93C5FD, #E0F2FE);
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .animated-bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .raindrop {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            width: 10px;
+            height: 20px;
+            background: rgba(0, 174, 255, 0.7);
+            border-radius: 50%;
+            animation: rainDrop 3s linear infinite;
+        }
+
+        @keyframes rainDrop {
+            0% { transform: translateY(0); opacity: 1; }
+            100% { transform: translateY(100vh); opacity: 0; }
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h2 {
+            color: #1E40AF;
+        }
+
+        p {
+            font-size: 20px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-bg"></div>
+    <div class="container">
+        <h2>💧 Water Usage Prediction</h2>
+        <p>🚧 Under Construction 🚧</p>
+    </div>
+    <script>
+        function createRaindrop() {
+            let drop = document.createElement("div");
+            drop.classList.add("raindrop");
+            drop.style.left = Math.random() * window.innerWidth + "px";
+            drop.style.animationDuration = (2 + Math.random() * 3) + "s";
+            document.body.appendChild(drop);
+            setTimeout(() => { drop.remove(); }, 3000);
+        }
+        
+        setInterval(createRaindrop, 300);
+    </script>
+</body>
+</html>

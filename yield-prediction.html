@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yield Prediction</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, #A3E635, #D9F99D);
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .animated-bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .tractor {
+            position: absolute;
+            bottom: 10%;
+            left: -100px;
+            width: 120px;
+            animation: moveTractor 10s linear infinite;
+        }
+
+        @keyframes moveTractor {
+            0% { left: -100px; }
+            100% { left: 110%; }
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h2 {
+            color: #4D7C0F;
+        }
+
+        p {
+            font-size: 20px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-bg"></div>
+    <img src="assets/img/tractor.png" class="tractor" alt="Tractor">
+    <div class="container">
+        <h2>🌾 Yield Prediction</h2>
+        <p>🚧 Under Construction 🚧</p>
+    </div>
+</body>
+</html>
