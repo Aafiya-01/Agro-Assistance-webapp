@@ -238,6 +238,7 @@ header {
   .hero {
       margin: auto;
       height: 50vh; 
+      margin-bottom: 28rem;
   }
 }
 
@@ -460,6 +461,10 @@ header {
 
 /*End Opportunities*/
 /* Invest*/
+.invest__item__footer {
+  margin-top: auto; 
+}
+
 .invest {
   margin: auto;
 }
@@ -487,6 +492,11 @@ header {
 
 .invest__item {
   padding: 2.5rem;
+  /* ADDED THIS LATER */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  min-height: 100%;
 }
 
 .invest__item:nth-child(1) {
@@ -516,6 +526,8 @@ header {
 
 .invest__item__body {
   margin: 5rem 0 2.5rem;
+  /* ADDED THIS LATER */
+  flex-grow: 1;
 }
 
 .invest__item__title {
@@ -688,7 +700,7 @@ header {
 
 .works__step_title {
   font-size: 2.4rem;
-  flex: 5;
+  flex: 2; /* added this later */
 }
 
 .works__step_description {
@@ -698,11 +710,11 @@ header {
   list-style-type:disc;
 }
 .works__step_description p {
-  padding-bottom: 25px;
+  padding-bottom: 2rem;
 }
 .works__step_description li {
-  padding-bottom: 10px;
-}
+  padding-bottom: 1rem;
+} 
 
 /*End How Is Works*/
 /*Testimonials*/
@@ -1097,6 +1109,12 @@ header {
   .opportunity {
     width: 100%;
   }
+
+  .img__50 {
+    max-width: 25%; 
+    height: auto; 
+    width: 50%;
+  }
   /*End Opportunities*/
   /*How Is Works*/
   .form_progressbar {
@@ -1112,6 +1130,7 @@ header {
   }
   .works__step__content {
     flex-direction: column;
+    margin-bottom: 10rem;
   }
   .works__step_title {
     font-size: 2rem;
@@ -1241,3 +1260,96 @@ header {
   /*End Farm Invest*/
 }
 /*# sourceMappingURL=main.css.map */
+
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Responsive Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #333;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+/* Mobile Menu */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      background: #333;
+      top: 60px;
+      left: 0;
+      width: 100%;
+  }
+  .nav-links.active {
+      display: flex;
+  }
+  .menu-toggle {
+      display: block;
+  }
+}
+
+/* Responsive Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+@media (min-width: 768px) {
+  .hero {
+      flex-direction: row;
+      text-align: left;
+  }
+}
+
+/* Responsive Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  /* background: #222; */
+  color: white;
+}
+
+@media (max-width: 480px) {
+  body {
+      font-size: 14px;
+  }
+}
