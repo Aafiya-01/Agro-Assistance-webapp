@@ -10,6 +10,7 @@ Agro-Assistance is a revolutionary AI-powered web application designed to help f
 ✅ Sustainable Farming – Optimize water usage and detect diseases early to minimize waste.
 
 ### Link to access the WebApp: [Agro-Assistance](https://aafiya-01.github.io/Agro-Assistance-webapp/)
+### Updated link with functionalities: [Agro-Assistance](https://agro-assistance.vercel.app/)
 
 ## 🔍 Join thousands of farmers transforming agriculture with technology!
 
